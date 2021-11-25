@@ -1,0 +1,53 @@
+/*!***************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/styles.sass ***!
+  \***************************************************************************************************************/
+body {
+  background-color: grey; }
+
+form {
+  margin-left: 100px;
+  margin-top: 100px;
+  position: relative; }
+
+.label {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 0;
+  padding: 4px 10px;
+  transform: skewX(-40deg);
+  background-color: rgba(220, 220, 222, 0.8); }
+  .label .phone-input {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    padding: 10px 20px;
+    box-shadow: none;
+    transform: skewX(40deg); }
+
+.phone-submit {
+  border: 1px solid white;
+  padding: 0.7px 30px;
+  margin-left: -30px;
+  color: white;
+  background-color: #ed1c1c;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform: skew(-45deg); }
+  .phone-submit p {
+    transform: skew(45deg); }
+
+@media screen and (max-width: 720px) {
+  form {
+    margin-left: 10px; }
+    form .label {
+      transform: skewX(0deg);
+      padding: 4px 0px; }
+      form .label .phone-input {
+        transform: skew(0deg);
+        padding: 10px 5px; }
+    form .phone-submit {
+      transform: skew(0deg);
+      margin-left: -3px; }
+      form .phone-submit p {
+        transform: skew(0deg); } }
+
