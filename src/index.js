@@ -1,6 +1,12 @@
 import sendPhoneNumber from './api'
 import './styles/styles.sass'
+import { library, dom } from '@fortawesome/fontawesome-svg-core'
+import { faUserAstronaut, faDownload } from '@fortawesome/free-solid-svg-icons'
 
+
+library.add(faUserAstronaut)
+library.add(faDownload)
+dom.watch()
 
 
 const form = document.querySelector("form");
