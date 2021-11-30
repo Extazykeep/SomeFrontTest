@@ -12,9 +12,15 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig)
 const store = getFirestore()
 const base = doc(store, "formData/3EDYdHZLjmwy4WTHeFbU")
+
+
 export default function sendPhoneNumber(num){
   setDoc(base, {phoneNumber: num})
   .then(()=>{
     alert("Thanks, your number was send")
+  }) 
+ .catch(err=>{
+    console.log(err)
+    alert(err.message + e.name)
   }) 
 }
